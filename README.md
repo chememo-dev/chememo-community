@@ -6,7 +6,7 @@
 
 ## このリポジトリについて
 
-ここは [Chememo](https://chememo.pages.dev) に掲載される記事やコミュニティ運営の場です。
+ここは [Chememo](https://chememo.com) に掲載される記事やコミュニティ運営の場です。
 
 - **記事**: `[著者ID]/記事名.md` に Markdown 形式で記事を保管しています
 - **コメント**: 各記事へのコメントは [Discussions](https://github.com/chememo-dev/chememo-community/discussions) で管理しています
@@ -34,9 +34,9 @@ Chememo では誰でも記事を投稿できます。プログラミングの知
 
 記事の書き方（フロントマターの設定、Markdown 記法、化学式の書き方など）は、以下のガイドで詳しく説明しています。
 
-- [記事を書く](https://chememo.pages.dev/guide/writing) — 投稿手順・Markdown 記法
-- [コンテンツガイドライン](https://chememo.pages.dev/guide/content) — 記事の品質基準・文体ルール
-- [コミュニティガイドライン](https://chememo.pages.dev/guide/community) — コミュニティのルール
+- [記事を書く](https://chememo.com/guide/writing) — 投稿手順・Markdown 記法
+- [コンテンツガイドライン](https://chememo.com/guide/content) — 記事の品質基準・文体ルール
+- [コミュニティガイドライン](https://chememo.com/guide/community) — コミュニティのルール
 
 ### 記事テンプレート
 
