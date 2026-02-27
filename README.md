@@ -8,7 +8,7 @@
 
 ここは [Chememo](https://chememo.com) に掲載される記事やコミュニティ運営の場です。
 
-- **記事**: `[著者ID]/記事名.md` に Markdown 形式で記事を保管しています
+- **記事**: `GitHubユーザー名/スラッグ.md` に Markdown 形式で記事を保管しています
 - **コメント**: 各記事へのコメントは [Discussions](https://github.com/chememo-dev/chememo-community/discussions) で管理しています
 - **要望・課題**: サイトやコミュニティへの要望は [Issues](https://github.com/chememo-dev/chememo-community/issues) で受け付けています
 
@@ -26,9 +26,13 @@ Chememo では誰でも記事を投稿できます。プログラミングの知
 
 1. GitHub アカウントを作成する（初回のみ）
 2. このリポジトリをフォークする（初回のみ）
-3. `あなたのGitHubユーザー名/記事名.md` というファイルを作成して記事を書く
+3. `あなたのGitHubユーザー名/スラッグ.md` というファイルを作成して記事を書く
 4. Pull Request を送る
 5. レビュー後に公開
+
+> **著者ディレクトリ名は GitHub ユーザー名と一致させてください。** サイト上の著者ページや記事URLに使われます。
+
+> **スラッグ**とは、記事のURLに使われる短い英語の名前です。例えば `recrystallization.md` なら、記事のURLは `chememo.com/posts/あなたのユーザー名/recrystallization` になります。半角英数字とハイフン（`-`）で付けてください。
 
 ### 詳しい手順
 
@@ -38,12 +42,13 @@ Chememo では誰でも記事を投稿できます。プログラミングの知
 - [コンテンツガイドライン](https://chememo.com/guide/content) — 記事の品質基準・文体ルール
 - [コミュニティガイドライン](https://chememo.com/guide/community) — コミュニティのルール
 
-### 記事テンプレート
+### フロントマター
+
+記事の先頭に `---` で囲んだメタデータを記述します。
 
 ```markdown
 ---
 title: "記事のタイトル"
-description: "記事の概要（1〜2文）"
 pubDate: 2026-01-15
 tags: ["有機化学", "実験技術"]
 ---
@@ -51,17 +56,23 @@ tags: ["有機化学", "実験技術"]
 ここから本文を書きます。
 ```
 
+| 項目 | 必須 | 説明 |
+|------|------|------|
+| `title` | **必須** | 記事のタイトル |
+| `pubDate` | **必須** | 公開日（YYYY-MM-DD 形式） |
+| `tags` | 任意 | タグの配列（デフォルト: なし） |
+| `updatedDate` | 任意 | 更新日（YYYY-MM-DD 形式、更新時に追記） |
+| `draft` | 任意 | `true` にすると非公開（デフォルト: `false`） |
+
 ## ディレクトリ構成
 
 ```
 chememo-community/
-├── clameyes/             # 著者: clameyes
-│   ├── profile.md        # 著者プロフィール
-│   ├── recrystallization.md
+├── clameyes/                      # 著者: clameyes（= GitHubユーザー名）
+│   ├── buneki.md                  # スラッグ = buneki
 │   └── ...
-├── your-username/        # 著者: あなた
-│   ├── profile.md
-│   └── your-article.md
+├── your-github-username/          # 著者: あなた（= GitHubユーザー名）
+│   └── recrystallization.md       # スラッグ = recrystallization
 └── README.md
 ```
 
