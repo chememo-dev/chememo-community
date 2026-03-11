@@ -8,7 +8,7 @@
 
 ここは [Chememo](https://chememo.com) に掲載される記事やコミュニティ運営の場です。
 
-- **記事**: `GitHubユーザー名/スラッグ.md` に Markdown 形式で記事を保管しています
+- **記事**: `posts/GitHubユーザー名/スラッグ.md` に Markdown 形式で記事を保管しています
 - **コメント**: 各記事へのコメントは [Discussions](https://github.com/chememo-dev/chememo-community/discussions) で管理しています
 - **要望・課題**: サイトやコミュニティへの要望は [Issues](https://github.com/chememo-dev/chememo-community/issues) で受け付けています
 
@@ -26,7 +26,7 @@ Chememo では誰でも記事を投稿できます。プログラミングの知
 
 1. GitHub アカウントを作成する（初回のみ）
 2. このリポジトリをフォークする（初回のみ）
-3. `あなたのGitHubユーザー名/スラッグ.md` というファイルを作成して記事を書く
+3. `posts/あなたのGitHubユーザー名/スラッグ.md` というファイルを作成して記事を書く
 4. Pull Request を送る
 5. レビュー後に公開
 
@@ -68,11 +68,13 @@ tags: ["有機化学", "実験技術"]
 
 ```
 chememo-community/
-├── clameyes/                      # 著者: clameyes（= GitHubユーザー名）
-│   ├── buneki.md                  # スラッグ = buneki
-│   └── ...
-├── your-github-username/          # 著者: あなた（= GitHubユーザー名）
-│   └── recrystallization.md       # スラッグ = recrystallization
+├── posts/                             # 記事コンテンツ
+│   ├── clameyes/                      # 著者: clameyes（= GitHubユーザー名）
+│   │   ├── buneki.md                  # スラッグ = buneki
+│   │   └── ...
+│   └── your-github-username/          # 著者: あなた（= GitHubユーザー名）
+│       └── recrystallization.md       # スラッグ = recrystallization
+├── icons/                             # タグアイコンなど
 └── README.md
 ```
 
